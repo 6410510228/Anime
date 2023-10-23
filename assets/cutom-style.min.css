@@ -1,0 +1,19 @@
+.hold-transition {
+  /*background-color: #222;*/
+  background-image: url("../1.jpeg");
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+}
+.login-card-body {
+  /*background-color: #222;
+    opacity: 0.5;*/
+}
+.card {
+    border-radius: 25%;
+}
+
+body {
+  background-image: url("paper.gif");
+  background-color: #222;
+}
