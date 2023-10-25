@@ -1,97 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0>">
-    <title>Final Project 477-301(Blog Anime Seasonal 2023)</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin Login Site</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="" href="https://static.bangkokpost.com/media/content/20200710/c1_1949056_200710094854.jpg" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="assets/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/adminlte.min.css">
+  
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Kanit:400" rel="stylesheet">
 
-    <!-- ตรงนี้เจ้งอยู่กลับไปแก้ซะ <link rel="stylesheet" type="text/css" href="css/Top Header.css" /> -->
+
+  
 </head>
-    <!----------------------------------TOP---------------------------------------->  
-    
-    
-    <header>
-        <h1 class="logo"><a href = "index.php">Anime Seasonal 2023</a></h1>
-        <nav class="navigation">
-            <a href = "#">Contact</a>
-            <a href ="Login.php"><button class="btnLogin-popup">Login</button></a>
-        </nav>
-    </header>
-    <!----------------------------------TOP---------------------------------------->  
-  <body>
-    <!----------------------------------LOGIN---------------------------------------->
-    
-    <!----------------------------------LOGIN----------------------------------------> 
-    
-  </body>
-    <!----------------------------------MAIN----------------------------------------> 
+<style>
+.hold-transition {
+  /*background-color: #222;*/
+  background-image: url("https://static.bangkokpost.com/media/content/20200710/c1_1949056_200710094854.jpg");
+  background-repeat: no-repeat;
 
-    <head>
-        <meta charset="UTF-8">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Responsive Vintage Grid</title>
-        
-        <link rel="stylesheet" type="text/css" href="css/reset.css" >
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,600" rel="stylesheet">
-    </head>
+  background-size: 100%;
+}
+.login-card-body {
+  /*background-color: #222;
+    opacity: 0.5;*/
+}
 
+body {
+  background-image: url("paper.gif");
+  background-color: #222;
+}
 
+</style>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+   
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      
+    <h3 style="padding-top:2rem;"><b >Log in </b></h3> <br><h4>Please Login</h4></center><br><br>
 
-    
-    <body>
-
-  
-        <div class="o--grid">
-  
-          <div class="o--grid__item o--grid--one">
-            <div class="o--grid__content">
-              <div class="o--grid__title o--grid__title--small">Anime Winter 2023</div>
-              <div class="o--grid__text">ฤดูหนาวเป็นฤดูกาลเริ่มต้นของปีใหม่ในซีรีส์อนิเมะญี่ปุ่น ตั้งแต่เดือนมกราคมถึงเดือนมีนาคม 2023 อนิเมะใหม่หลายสิบเรื่องมีทั้งซีรีส์มังงะและไลท์โนเวลที่ได้รับการดัดแปลงเป็นซีรีส์อนิเมะ และซีรีส์คลาสสิกที่จะได้รับการรีเมค</div>
-              <div class="o--grid__link"><a href="winter.php">"Read More"</a></div>
+      <form action="chk_login.php" method="post">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="mem_username" id="mem_username" placeholder="Username">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user text-primary"></span>
             </div>
           </div>
-          
-          <div class="o--grid__item o--grid--two"></div>
-          
-          <div class="o--grid__item o--grid--three"></div>
-          
-          <div class="o--grid__item o--grid--four">
-            <div class="o--grid__content">
-              <div class="o--grid__title o--grid__title--small">Anime Spring 2023</div>
-              <div class="o--grid__text">ตั้งแต่เดือนเมษายนถึงมิถุนายน 2023 ก็อาจเรียกได้ว่าเป็นอีกหนึ่งฤดูกาลที่มีผลงานเด่นๆอีกหลายเรื่องเลย อย่าง Oshi no Ko ที่ได้ศิลปินอย่าง Yoasobi มาช่วยขับร้องเพลงเปิด</div>
-              <div class="o--grid__link"><a href="spring.php">"Read More"</a></div>
-            </div>
-          </div>
-          
-          <div class="o--grid__item o--grid--five">
-            <div class="o--grid__content">
-              <div class="o--grid__title o--grid__title--small">Anime Summer 2023</div>
-              <div class="o--grid__text">เมื่ออุณหภูมิสูงขึ้น ความคาดหวังสำหรับอนิเมะที่ดีที่สุดของฤดูร้อน (กรกฎาคมถึงกันยายน) ปี 2023 ก็เพิ่มสูงขึ้นเช่นกัน!โดยเฉพาะการกลับมาของอนิเมะขึ้นหิ่งอย่าง Jujutsu Kaisen</div>
-              <div class="o--grid__link"><a href="summer.php">"Read More"</a></div>
-            </div>
-          </div>
-          
-          <div class="o--grid__item o--grid--six"></div>
-          <div class="o--grid__item o--grid--seven"></div>
-          
-          <div class="o--grid__item o--grid--eight">
-            <div class="o--grid__content">
-              <div class="o--grid__title o--grid__title--small">Anime Autumn 2023</div>
-              <div class="o--grid__text"> ส่งท้ายปีกับรายชื่ออนิเมะประจำฤดูใบไม้ร่วงเดือนตุลาคมถึงธันวาคมด้วยอนิเมะแฟนตาซีต่างโลกมากมายรวมไปถึงการกลับมาของ FINAL ที่ไม่สุดท้ายอย่าง Attack on Titan Final Season Part 3</div>
-              <div class="o--grid__link"><a href="autumn.php">"Read More"</a></div>
-            </div>
-          </div>
-          
         </div>
+        
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" name="mem_password" id="mem_password" placeholder="Password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock text-primary"></span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-auth-links text-center mb-3">
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+          <h5>user/password:2222 as guest</h5></center><br>
+     <!--  <p class="login-box-msg">เข้าสู่ระบบ</p> -->
+          <!-- <a href="#" class="btn btn-block btn-danger">
+            <i class="fab fa-google-plus mr-2"></i> พนักงานขับรถ
+          </a> -->
+        </div>
+      </form>
 
-    </body>
-    <!----------------------------------MAIN---------------------------------------->    
+      
+      <!-- /.social-auth-links -->
 
-  
+      
+    </div>
+    <!-- /.login-card-body -->
+
+  </div>
+
+</div>
+<!-- /.login-box -->
+
+
+
+</body>
+
+
+<!-- jQuery -->
+<script src="assets/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="assets/bootstrap.bundle.min.js"></script>
+
 
 </html>
-
-
