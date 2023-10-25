@@ -78,8 +78,8 @@ echo "</pre>";
 
 exit();
 
-	$a_id  = mysqli_real_escape_string($condb,$_GET["a_id"]);
-	$sql = "DELETE FROM tbl_anime WHERE a_id=$a_id";
+	$p_id  = mysqli_real_escape_string($condb,$_GET["a_id"]);
+	$sql = "DELETE FROM tbl_anime WHERE a_id=$p_id";
 	$result = mysqli_query($condb, $sql) or die ("Error in query: $sql " . mysqli_error());	
 	//mysqli_close($condb);
 	

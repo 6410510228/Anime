@@ -39,8 +39,10 @@ session_start();
                                   }
                                   elseif($_SESSION["ref_l_id"]=="2"){  
 
-                                    Header("Location: admin/");
+                                    Header("Location: User/");
                                   }
+
+                                  
                               }else{
                                 echo "<script>";
                                     echo "alert(\" user หรือ  mem_password ไม่ถูกต้อง\");"; 

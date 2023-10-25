@@ -50,8 +50,7 @@ body {
   <div class="card">
     <div class="card-body login-card-body">
       
-    <h3 style="padding-top:2rem;"><b >Log in as Admin</b></h3> <br><h4>Please Login</h4></center><br>
-     <!--  <p class="login-box-msg">เข้าสู่ระบบ</p> -->
+    <h3 style="padding-top:2rem;"><b >Log in </b></h3> <br><h4>Please Login</h4></center><br><br>
 
       <form action="chk_login.php" method="post">
         <div class="input-group mb-3">
@@ -74,6 +73,8 @@ body {
         
         <div class="social-auth-links text-center mb-3">
           <button type="submit" class="btn btn-primary btn-block">Login</button>
+          <h5>user/password:2222 as guest</h5></center><br>
+     <!--  <p class="login-box-msg">เข้าสู่ระบบ</p> -->
           <!-- <a href="#" class="btn btn-block btn-danger">
             <i class="fab fa-google-plus mr-2"></i> พนักงานขับรถ
           </a> -->

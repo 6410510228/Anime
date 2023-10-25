@@ -25,7 +25,7 @@ reader.readAsDataURL(input.files[0]);
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <div class="container-fluid">
-    <h1>Edit Anime List</h1>
+    <h1> Anime List</h1>
     </div><!-- /.container-fluid -->
   </section>
   <!-- Main content -->
@@ -37,7 +37,7 @@ reader.readAsDataURL(input.files[0]);
           
           
           
-          <button type="button" class="btn btn-light" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus"></i> เพิ่มข้อมูล อนิเมะ</button>
+          
           
         </div>
       </div>
@@ -56,8 +56,8 @@ reader.readAsDataURL(input.files[0]);
                   <th width="10%">Episode</th>
                   <th width="10%">Seasonal</th>
                   
-                  <th width="10%">edit</th>
-                  <th width="10%">del</th>
+                  <th width="10%">Description</th>
+                  
                   
                 </tr>
               </thead>
@@ -72,15 +72,15 @@ reader.readAsDataURL(input.files[0]);
                   
                   <td><?php echo $row_product['a_episode']; ?></td>
                   <td><?php echo $row_product['a_seasonal']; ?></td>
-                  
                   <td>
                     <p style="margin-bottom: 10px;">
-                      <a href="anime_edit.php?p_id=<?php echo $row_product['a_id']; ?>" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> edit</a>
+                      <a href="anime_edit.php?a_id=<?php echo $row_product['a_id']; ?>" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> เรื่องย่อ</a>
                     </p>
                     
                     <!-- <a href="level.php?ace=edit&l_id=<?php echo $row_product['a_id'];?>" class="btn btn-warning btn-xs"> edit</a> -->
                   </td>
-                  <td><a href="anime_db.php?p_id=<?php echo $row_product['a_id']; ?>" class="del-btn btn btn-danger"><i class="fas fas fa-trash"></i> del</a></td>
+                  
+                 
                   
                 </tr>
                 <?php
