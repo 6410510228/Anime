@@ -1,5 +1,5 @@
 <?php
-$menu = "product"
+$menu = "animeList"
 ?>
 <?php include("header.php"); ?>
 <?php

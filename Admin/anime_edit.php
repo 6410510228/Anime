@@ -1,18 +1,16 @@
-$menu = "product"
+<?php
+$menu = "animeList"
 ?>
 <?php include("header.php"); ?>
 
 <?php 
+
 $a_id = $_GET['a_id'];
 
-$query_product = "SELECT * FROM tbl_anime 
-
-WHERE a_id = $a_id"  
+$query_product = "SELECT * FROM tbl_anime WHERE a_id = $a_id"  
 or die("Error : ".mysqlierror($query_product));
 $rs_product = mysqli_query($condb, $query_product);
 $row=mysqli_fetch_array($rs_product);
-//echo $row['mem_name'];
-//echo ($query_member);//test query
 ?>
 
 
@@ -55,8 +53,8 @@ $row=mysqli_fetch_array($rs_product);
             <br>
             <div class="card-body">
 
-                    <form action="product_db.php" method="POST">
-                    <input type="hidden" name="product" value="edit">
+                    <form action="anime_db.php" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="anime" value="edit">
                     <input type="hidden" name="a_id" value="<?php echo $row['a_id'];?>">
                     <input name="file1" type="hidden" id="file1" value="<?php echo $row['a_img']; ?>" />
                    
@@ -65,7 +63,7 @@ $row=mysqli_fetch_array($rs_product);
             <div class="form-group row">
               <label for="" class="col-sm-2 col-form-label">ชื่อ </label>
               <div class="col-sm-10">
-                <input  name="a_name" type="text" required class="form-control"  placeholder="anime name"  minlength="3"/>
+                <input  name="a_name" type="text" required class="form-control"  placeholder="anime name" value="<?php echo $row['a_name'];?>" minlength="3"/>
               </div>
             </div>
             
@@ -73,14 +71,14 @@ $row=mysqli_fetch_array($rs_product);
           <div class="form-group row">
             <label for="" class="col-sm-2 col-form-label">เรื่องย่อ </label>
             <div class="col-sm-10">
-              <textarea name="a_detail" rows="3" class="form-control"></textarea>
+              <textarea name="a_detail" rows="3" class="form-control" ><?php echo $row['a_detail'];?></textarea>
             </div>
           </div>
           
           <div class="form-group row">
             <label for="" class="col-sm-2 col-form-label">จำนวนตอน </label>
             <div class="col-sm-10">
-              <input  name="a_episode" type="number" min="0" required class="form-control"  placeholder="จำนวนตอน"  minlength="3"/>
+              <input  name="a_episode" type="number" min="0" required class="form-control"  placeholder="จำนวนตอน"  value="<?php echo $row['a_episode'];?>" minlength="3"/>
             </div>
           </div>
 
@@ -88,13 +86,13 @@ $row=mysqli_fetch_array($rs_product);
             <div class="form-group row">
               <label for="" class="col-sm-2 col-form-label">ฤดูกาล</label>
               <div class="col-sm-10">
-              <select class="form-control" name="a_seasonal" id="a_seasonal" required>
+              <select class="form-control" name="a_seasonal" id="a_seasonal"  value="<?php echo $row['a_seasonal'];?>" required>
                   <option value="">-- เลือกฤดูกาล --</option>
                   
-                  <option value="winter">winter</option>
-                  <option value="spring">spring</option>
-                  <option value="summer">summer</option>
-                  <option value="autumn">autumn</option>
+                  <option value="winter" <?php if ($row['a_seasonal']=='winter') {echo "selected";}?>>winter</option>
+                  <option value="spring" <?php if ($row['a_seasonal']=='spring') {echo "selected";}?>>spring</option>
+                  <option value="summer" <?php if ($row['a_seasonal']=='summer') {echo "selected";}?>>summer</option>
+                  <option value="autumn" <?php if ($row['a_seasonal']=='autumn') {echo "selected";}?>>autumn</option>
                   
                 </select>
                 

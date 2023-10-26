@@ -1,0 +1,211 @@
+*, ::after, ::before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    overflow: auto;
+  }
+  
+  .o--message {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    padding: 1rem;
+    background: #fff;
+    font-size: 2rem;
+    z-index: 99;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .o--message:hover {
+    -moz-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.12);
+  }
+  .o--message a {
+    color: #333;
+  }
+  .o--message a:hover {
+    color: #000;
+  }
+  
+  .o--grid {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .o--grid__item {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .o--grid__content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 6vw;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .o--grid__title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin: 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .o--grid__title--small {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-bottom: 0.25rem;
+    text-shadow: none;
+  }
+  
+  .o--grid__text {
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 1.2rem 0;
+  }
+  
+  .o--grid__link {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-top: 1rem;
+    align-self: flex-start;
+    cursor: pointer;
+  }
+  .o--grid__link:hover::before {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  .o--grid__link::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 90%;
+    height: 1px;
+    bottom: -3px;
+    transform-origin: 0% 50%;
+    transform: scale3d(0, 1, 1);
+    opacity: 0;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -moz-transition-property: opacity, -moz-transform;
+    -o-transition-property: opacity, -o-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+  }
+  
+  .o--grid--one {
+    background: #0c13c1;
+    transition: all 0.3s;
+  }
+  .o--grid--one:hover {
+    background: #0d14cf;
+  }
+  
+  .o--grid--four {
+    background: #d22851;
+    transition: all 0.3s;
+  }
+  .o--grid--four:hover {
+    background: #d8315a;
+  }
+  
+  .o--grid--five {
+    background: #6317f5;
+    transition: all 0.3s;
+  }
+  .o--grid--five:hover {
+    background: #6d26f6;
+  }
+  
+  .o--grid--eight {
+    background: #f7ac03;
+    transition: all 0.3s;
+  }
+  .o--grid--eight:hover {
+    background: #fcb30d;
+  }
+  
+  .o--grid--two {
+    background: #ccc url("https://japan-geeks.com/wp-content/uploads/2022/10/Best-Anime-Winter-2023-768x426.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-filter: contrast(120%);
+    filter: contrast(120%);
+  }
+  
+  .o--grid--three {
+    background: #ccc url("https://japan-geeks.com/wp-content/uploads/2022/10/Best-Anime-Spring-2023-768x426.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-filter: contrast(120%);
+    filter: contrast(120%);
+  }
+  
+  .o--grid--six {
+    background: #ccc url("https://japan-geeks.com/wp-content/uploads/2023/04/Best-Anime-in-Summer-2023-768x427.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-filter: contrast(120%);
+    filter: contrast(120%);
+  }
+  
+  .o--grid--seven {
+    background: #ccc url("https://japan-geeks.com/wp-content/uploads/2023/04/Best-Anime-Autumn-2023-768x426.jpg") no-repeat center center;
+    background-size: cover;
+    -webkit-filter: contrast(120%);
+    filter: contrast(120%);
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .o--grid {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .o--grid--two, .o--grid--three, .o--grid--six, .o--grid--seven {
+      display: none;
+    }
+  
+    .o--grid__content {
+      padding: 8vw;
+    }
+  }

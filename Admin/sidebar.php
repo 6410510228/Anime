@@ -24,8 +24,8 @@
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-         <!-- กรณีดึงรูปจาก DB  <img src="../mem_img/<?php echo $_SESSION['mem_img'];?>" class="img-circle elevation-2" alt="User Image">  -->
-         <!-- กรณีดึงรูปจากเครื่อง --><img src="../assets/img/27100874020210707_113953.png.png" class="img-circle elevation-2" alt="User Image"> 
+         <!-- กรณีดึงรูปจากDB--><img src="../mem_img/<?php echo $_SESSION['mem_img'];?>" class="img-circle elevation-2" alt="User Image">  
+         <!-- กรณีดึงรูปจากเครื่อง<img src="../assets/img/27100874020210707_113953.png.png" class="img-circle elevation-2" alt="User Image">  -->
         </div>
         <div class="info">
           <a href="edit_profile.php" target="" class="d-block"> <?php echo $_SESSION['mem_name'];?> | Edit Profile</a>
@@ -40,22 +40,7 @@
         <ul class="nav nav-pills nav-sidebar nav-child-indent flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-header">เมนูสำหรับการขาย</li>
-
-         <li class="nav-item">
-            <a href="index.php" class="nav-link <?php if($menu=="index"){echo "active";} ?> ">
-              <i class="nav-icon fas fa-clipboard-list"></i>
-              <p>รายการขาย </p>
-            </a>
-          </li>
-
-
-          <li class="nav-item">
-            <a href="list_l.php" class="nav-link <?php if($menu=="sale"){echo "active";} ?> ">
-              <i class="nav-icon fa fa-shopping-cart "></i>
-              <p>ขายสินค้า </p>
-            </a>
-          </li>
+          
         </ul>
         <hr>
 
@@ -77,22 +62,10 @@
           </li>
 
 
-          <li class="nav-item">
-            <a href="" class="nav-link <?php if($menu=="type"){echo "active";} ?> ">
-              <i class="nav-icon fa fa-copy"></i>
-              <p>Type </p>
-            </a>
-          </li>
+
 
           <li class="nav-item">
-            <a href="" class="nav-link <?php if($menu=="brand"){echo "active";} ?> ">
-              <i class="nav-icon fa fa-box"></i>
-              <p>Brand </p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="list_anime.php" class="nav-link <?php if($menu=="AnimeList"){echo "active";} ?> ">
+            <a href="list_anime.php" class="nav-link <?php if($menu=="animeList"){echo "active";} ?> ">
               <i class="nav-icon fa fa-box-open"></i>
               <p>AnimeList </p>
             </a>

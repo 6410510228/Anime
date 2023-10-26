@@ -176,3 +176,14 @@ $(function() {
 })
 </script>
 <?php } ?>
+
+<?php if(isset($_GET['anime_no'])){ ?>
+<script>
+  Swal.fire({
+  title: 'Error',
+  text: 'ไอบ่าวอย่ามือบอลยังทำไม่เสร็จ อยากลบไปลบใน DB!!',
+  icon: 'error',
+  confirmButtonText: 'ตกลง'
+})
+</script>
+<?php } ?>

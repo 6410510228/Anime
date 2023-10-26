@@ -51,7 +51,7 @@
       
 
           <li class="nav-item">
-            <a href="list_anime.php" class="nav-link <?php if($menu=="AnimeList"){echo "active";} ?> ">
+            <a href="list_anime.php" class="nav-link <?php if($menu=="animeList"){echo "active";} ?> ">
               <i class="nav-icon fa fa-box-open"></i>
               <p>AnimeList </p>
             </a>

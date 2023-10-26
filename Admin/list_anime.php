@@ -1,5 +1,5 @@
 <?php
-$menu = "product"
+$menu = "animeList"
 ?>
 <?php include("header.php"); ?>
 <?php
@@ -75,12 +75,12 @@ reader.readAsDataURL(input.files[0]);
                   
                   <td>
                     <p style="margin-bottom: 10px;">
-                      <a href="anime_edit.php?p_id=<?php echo $row_product['a_id']; ?>" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> edit</a>
+                      <a href="anime_edit.php?a_id=<?php echo $row_product['a_id']; ?>&&anime=edit" class="btn btn-warning"><i class="fas fa-pencil-alt"></i> edit</a>
                     </p>
                     
                     <!-- <a href="level.php?ace=edit&l_id=<?php echo $row_product['a_id'];?>" class="btn btn-warning btn-xs"> edit</a> -->
                   </td>
-                  <td><a href="anime_db.php?p_id=<?php echo $row_product['a_id']; ?>" class="del-btn btn btn-danger"><i class="fas fas fa-trash"></i> del</a></td>
+                  <td><a href="anime_db.php?a_id=<?php echo $row_product['a_id']; ?>&&anime=del" class="del-btn btn btn-danger"><i class="fas fas fa-trash"></i> del</a></td>
                   
                 </tr>
                 <?php
@@ -91,7 +91,7 @@ reader.readAsDataURL(input.files[0]);
                 ?>
               </tbody>
             </table>
-            <?php if(isset($_GET['d'])){ ?>
+            <!-- <?php if(isset($_GET['d'])){ ?>
             <div class="flash-data" data-flashdata="<?php echo $_GET['d'];?>"></div>
             <?php } ?>
             <script>
@@ -102,13 +102,13 @@ reader.readAsDataURL(input.files[0]);
             imageUrl: '../logo_fordev22_2.png',
             imageWidth: 250,
             //imageHeight: 100,
-            title: 'Are you sure to delete?',
-            text: "You won't be able to revert this!",
+            title: 'อย่ากดนะ',
+            text: "อย่าหาว่าไม่เตือน!",
             // icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
+            confirmButtonText: 'ไม่เชื่อ!โม้'
             }).then((result) => {
             if (result.value) {
             document.location.href = href;
@@ -125,7 +125,7 @@ reader.readAsDataURL(input.files[0]);
             icon: 'success'
             })
             }
-            </script>
+            </script> -->
             
             
             

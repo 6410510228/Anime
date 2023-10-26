@@ -11,8 +11,8 @@ $query_member = "SELECT * FROM tbl_member WHERE mem_id = $mem_id"
 or die("Error : ".mysqlierror($query_member));
 $rs_member = mysqli_query($condb, $query_member);
 $row=mysqli_fetch_array($rs_member);
-//echo $row['mem_name'];
-//echo ($query_member);//test query
+// echo $row['mem_name'];
+// echo ($query_member);//test query
 
 
 
@@ -64,18 +64,9 @@ $row=mysqli_fetch_array($rs_member);
                     <label for="" class="col-sm-2 col-form-label">ระดับการใช้งาน </label>
                     <div class="col-sm-10">
                       <select class="form-control select2" name="ref_l_id" id="ref_l_id" required>
-                        <option value="<?php echo $row['ref_l_id'];?>">-- <?php if ($row['ref_l_id']==1) {
-                          echo "ผู้ดูแลระบบ(Admin)";
-                        }else{
-                          echo "พนักงาน";
-                        } ?> --</option>
-
-
-
-                          <option value="">-- เลือกประเภท --</option>
-                         
-                          <option value="1">ผู้ดูแลระบบ(Admin)</option>
-                          <option value="2">พนักงาน</option>
+                          <option value="">-- เลือกประเภท --</option>  
+                          <option value="1" <?php if ($row['ref_l_id']==1) {echo "selected";}?>>ผู้ดูแลระบบ(Admin)</option>
+                          <option value="2" <?php if ($row['ref_l_id']==2) {echo "selected";}?>>พนักงาน</option>
                           
 
                         </select>
