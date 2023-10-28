@@ -81,7 +81,6 @@ $row=mysqli_fetch_array($rs_product);
               <input  name="a_episode" type="number" min="0" required class="form-control"  placeholder="จำนวนตอน"  value="<?php echo $row['a_episode'];?>" minlength="3"/>
             </div>
           </div>
-
           <div class="modal-body">
             <div class="form-group row">
               <label for="" class="col-sm-2 col-form-label">ฤดูกาล</label>

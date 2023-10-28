@@ -12,11 +12,11 @@
 
 
     <a href="" class="brand-link bg-gray">
-      <img src="../assets/img/ffd2222.png"
+      <!-- <img src="../assets/img/ffd2222.png"
            alt="AdminLTE Logo"
-           class="brand-image"
+           class="brand-image" -->
           >
-      <span class="brand-text font-weight-light">FD22 | POS System</span>
+      <span class="brand-text font-weight-light">Project New Anime List 2023</span>
     </a>
 
     <!-- Sidebar -->

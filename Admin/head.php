@@ -9,7 +9,7 @@
   <title>Project Anime List 2023 </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="" href="../assets/img/t.png" />
+  <!-- <link rel="icon" type="" href="../assets/img/t.png" /> -->
   <!-- Font Awesome -->
  <!--  http://fordev22.com/ -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
